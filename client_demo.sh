@@ -6,4 +6,5 @@ clear
 # Start Demo
 pe "uname -a"
 
-pe "docker run --rm oscar86hsu/multiarch-demo"
+pe "sudo docker pull oscar86hsu/multiarch-demo"
+pe "sudo docker run --rm oscar86hsu/multiarch-demo"

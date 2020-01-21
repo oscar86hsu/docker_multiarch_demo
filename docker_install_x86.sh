@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt-get install git jq pv -y
 sudo apt-get remove docker docker-engine docker.io containerd runc -y
 sudo apt-get update
 sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
@@ -10,6 +11,5 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-sudo usermod -a -G docker ubuntu
 sudo systemctl start docker
 sudo systemctl enable docker
